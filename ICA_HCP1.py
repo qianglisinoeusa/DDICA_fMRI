@@ -328,7 +328,7 @@ def MMI5(variable1,variable2,variable3,variable4,variable5,sigma1,alpha):
 #source_data = source['HCP_C']
 
 with h5py.File('HCPPCA_DeepICA.mat', 'r') as f:
-    source_data = f['sPCA_SMs'][:]
+    source_data = f['SMs'][:]
 print('Check Voxel-Correlation Size:')
 print(source_data.shape)
 #source_data[source_data<0.6]=0
